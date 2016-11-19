@@ -41,8 +41,3 @@ Any CGPath can be split into subpaths. Of which there are three types:
  
 See [calculations.md](calculations.md) for a detailed mathematical explanation of how the length of these three can be calculated.
 
-
-
-## License
-
-TBD
