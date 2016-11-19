@@ -6,7 +6,22 @@
 
 This project provides a simple API to get the length of either a UIBezierPath or NSBezierPath. Example:
 
+```swift
+let rect = CGRect(origin: .zero, size: CGSize(width: 100, height: 300))
+let path = UIBezierPath(ovalIn: rect)
+
+// Length in pt.
+let length = path.length
+```
+
+
 There's also an API for getting a point on a path at a certain percentage, example:
+
+```swift
+// CGPoint at 50% of path
+let point = path.point(at: 0.5)
+```
+
 
 ## Requirements
 
