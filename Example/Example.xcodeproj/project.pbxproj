@@ -13,7 +13,24 @@
 		BE8116081DDFACF400FD263E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE8116071DDFACF400FD263E /* Assets.xcassets */; };
 		BE81160B1DDFACF400FD263E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE8116091DDFACF400FD263E /* LaunchScreen.storyboard */; };
 		BE8116381DDFB68700FD263E /* BezierPathLength.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8116371DDFB68700FD263E /* BezierPathLength.framework */; };
+		BE81163E1DE083E500FD263E /* BezierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE81163D1DE083E500FD263E /* BezierView.swift */; };
+		BE8116401DE085BA00FD263E /* BezierPathLength.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE81163F1DE085BA00FD263E /* BezierPathLength.framework */; };
+		BE8116411DE085BA00FD263E /* BezierPathLength.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE81163F1DE085BA00FD263E /* BezierPathLength.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE8116421DE085BB00FD263E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BE8116411DE085BA00FD263E /* BezierPathLength.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BE8115FD1DDFACF400FD263E /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +41,8 @@
 		BE81160A1DDFACF400FD263E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE81160C1DDFACF400FD263E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE8116371DDFB68700FD263E /* BezierPathLength.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BezierPathLength.framework; path = "../BezierPathLength/build/Debug-iphoneos/BezierPathLength.framework"; sourceTree = "<group>"; };
+		BE81163D1DE083E500FD263E /* BezierView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BezierView.swift; sourceTree = "<group>"; };
+		BE81163F1DE085BA00FD263E /* BezierPathLength.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BezierPathLength.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE8116401DE085BA00FD263E /* BezierPathLength.framework in Frameworks */,
 				BE8116381DDFB68700FD263E /* BezierPathLength.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,6 +61,7 @@
 		BE8115F41DDFACF300FD263E = {
 			isa = PBXGroup;
 			children = (
+				BE81163F1DE085BA00FD263E /* BezierPathLength.framework */,
 				BE8115FF1DDFACF400FD263E /* Example */,
 				BE8115FE1DDFACF400FD263E /* Products */,
 				BE8116361DDFB68600FD263E /* Frameworks */,
@@ -60,6 +81,7 @@
 			children = (
 				BE8116001DDFACF400FD263E /* AppDelegate.swift */,
 				BE8116021DDFACF400FD263E /* ViewController.swift */,
+				BE81163D1DE083E500FD263E /* BezierView.swift */,
 				BE8116041DDFACF400FD263E /* Main.storyboard */,
 				BE8116071DDFACF400FD263E /* Assets.xcassets */,
 				BE8116091DDFACF400FD263E /* LaunchScreen.storyboard */,
@@ -86,6 +108,7 @@
 				BE8115F91DDFACF400FD263E /* Sources */,
 				BE8115FA1DDFACF400FD263E /* Frameworks */,
 				BE8115FB1DDFACF400FD263E /* Resources */,
+				BE8116421DE085BB00FD263E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -150,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE8116031DDFACF400FD263E /* ViewController.swift in Sources */,
+				BE81163E1DE083E500FD263E /* BezierView.swift in Sources */,
 				BE8116011DDFACF400FD263E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
