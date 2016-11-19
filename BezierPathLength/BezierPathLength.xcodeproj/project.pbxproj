@@ -10,6 +10,8 @@
 		BE8116261DDFB02A00FD263E /* BezierPathLength.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE81161C1DDFB02900FD263E /* BezierPathLength.framework */; };
 		BE81162B1DDFB02A00FD263E /* BezierPathLengthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE81162A1DDFB02A00FD263E /* BezierPathLengthTests.swift */; };
 		BE81162D1DDFB02A00FD263E /* BezierPathLength.h in Headers */ = {isa = PBXBuildFile; fileRef = BE81161F1DDFB02900FD263E /* BezierPathLength.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE81163B1DDFBDF100FD263E /* PathElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8116391DDFBDF100FD263E /* PathElement.swift */; };
+		BE81163C1DDFBDF100FD263E /* BezierPath+Length.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE81163A1DDFBDF100FD263E /* BezierPath+Length.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		BE8116251DDFB02A00FD263E /* BezierPathLengthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BezierPathLengthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE81162A1DDFB02A00FD263E /* BezierPathLengthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BezierPathLengthTests.swift; sourceTree = "<group>"; };
 		BE81162C1DDFB02A00FD263E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE8116391DDFBDF100FD263E /* PathElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathElement.swift; sourceTree = "<group>"; };
+		BE81163A1DDFBDF100FD263E /* BezierPath+Length.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BezierPath+Length.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 		BE81161E1DDFB02900FD263E /* BezierPathLength */ = {
 			isa = PBXGroup;
 			children = (
+				BE8116391DDFBDF100FD263E /* PathElement.swift */,
+				BE81163A1DDFBDF100FD263E /* BezierPath+Length.swift */,
 				BE81161F1DDFB02900FD263E /* BezierPathLength.h */,
 				BE8116201DDFB02900FD263E /* Info.plist */,
 			);
@@ -149,6 +155,7 @@
 					BE81161B1DDFB02900FD263E = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 6G5LMQ72D8;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					BE8116241DDFB02A00FD263E = {
@@ -198,6 +205,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE81163B1DDFBDF100FD263E /* PathElement.swift in Sources */,
+				BE81163C1DDFBDF100FD263E /* BezierPath+Length.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +331,7 @@
 		BE8116311DDFB02A00FD263E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6G5LMQ72D8;
@@ -334,6 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = be.silverfox.BezierPathLength;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +352,7 @@
 		BE8116321DDFB02A00FD263E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6G5LMQ72D8;
@@ -360,6 +372,7 @@
 		BE8116341DDFB02A00FD263E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 6G5LMQ72D8;
 				INFOPLIST_FILE = BezierPathLengthTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +385,7 @@
 		BE8116351DDFB02A00FD263E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 6G5LMQ72D8;
 				INFOPLIST_FILE = BezierPathLengthTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
