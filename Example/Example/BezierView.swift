@@ -24,16 +24,7 @@ class BezierView: UIView {
 	}
 	
     override func draw(_ rect: CGRect) {
-
-//		let path = UIBezierPath()
-
-		
-//		path.addCurve(to: CGPoint(x: 250, y: 250), controlPoint1: CGPoint(x: 200, y: 250), controlPoint2: CGPoint(x: 250, y: 200))
-		
-//		path.addQuadCurve(to: CGPoint(x: 300, y: 300), controlPoint: CGPoint(x: 150, y: 200))
-//		let path = UIBezierPath(roundedRect: rect.insetBy(dx: 8.0, dy: 8.0), cornerRadius: 15.0)
-		
-		
+			
 		guard let path = bezierPath else {
 			return
 		}

@@ -98,7 +98,7 @@ class ViewController: UIViewController {
 			update()
 			
 		}
-		
+
 	}
 	
 	@IBAction func pickPath(_ sender: UIButton) {
