@@ -2,9 +2,9 @@
 
 Any CGPath can be split into subpaths. Of which there are three types:
 
-* [Linear](#Linear)
-* [Quadratic curve](#Quadratic-curve)
-* [Cubic curve](#Cubic-curve)
+* [Linear](#linear)
+* [Quadratic curve](#quadratic-curve)
+* [Cubic curve](#cubic-curve)
 
 When calculating the length of a CGPath we actually calculate the lengths of all the subpaths, and add those together. 
 
