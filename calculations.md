@@ -1,12 +1,12 @@
 # Bezier Path Calculations
 
-Any CGPath can be split into subpaths, of which there are three types:
+Any ```CGPath``` can be split into subpaths, of which there are three types:
 
 * [Linear](#linear)
 * [Quadratic curve](#quadratic-curve)
 * [Cubic curve](#cubic-curve)
 
-When calculating the length of a CGPath we actually calculate the sum of the lengths of all the subpaths.
+When calculating the length of a ```CGPath``` we actually calculate the sum of the lengths of all its subpaths.
 
 Linear
 ------

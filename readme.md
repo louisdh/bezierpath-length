@@ -4,7 +4,7 @@
 ![Platform](https://img.shields.io/badge/Platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-lightgrey.svg)
 [![Twitter](https://img.shields.io/badge/Twitter-@LouisDhauwe-blue.svg?style=flat)](http://twitter.com/LouisDhauwe)
 
-This project provides a simple API to get the length of either a UIBezierPath or NSBezierPath. Example:
+This project provides a simple API to get the length of either a ```UIBezierPath``` or ```NSBezierPath```. Example:
 
 ```swift
 let rect = CGRect(origin: .zero, size: CGSize(width: 100, height: 300))
@@ -30,9 +30,9 @@ let point = path.point(at: 0.5)
 
 ## How does it work?
 
-The actual calculations are implemented on a CGPath extension, but a [UI/NS]BezierPath extension is available for convenience.
+The actual calculations are implemented on a ```CGPath``` extension, but a ```[UI/NS]BezierPath``` extension is available for convenience.
 
-Any CGPath can be split into subpaths. Of which there are three types:
+Any ```CGPath``` can be split into subpaths. Of which there are three types:
 
 * Linear
 * Quadratic curve
