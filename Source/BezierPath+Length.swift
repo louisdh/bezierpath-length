@@ -77,6 +77,7 @@ public extension CGPath {
 				
 				guard let p0 = currentPoint else {
 					assert(false, "Expected current point")
+					break
 				}
 				
 				let l = distanceBetween(point: p0, and: p1)
@@ -101,6 +102,7 @@ public extension CGPath {
 				
 				guard let p0 = currentPoint else {
 					assert(false, "Expected current point")
+					break
 				}
 				
 				let l = quadCurveLength(p0: p0, c1: c1, p1: p1)
@@ -124,6 +126,7 @@ public extension CGPath {
 				
 				guard let p0 = currentPoint else {
 					assert(false, "Expected current point")
+					break
 				}
 				
 				let l = cubicCurveLength(p0: p0, c1: c1, c2: c2, p1: p1)
@@ -172,6 +175,7 @@ public extension CGPath {
 				
 				guard let b = currentPoint else {
 					assert(false, "Expected current point")
+					break
 				}
 				
 				length += distanceBetween(point: t, and: b)
@@ -184,6 +188,7 @@ public extension CGPath {
 				
 				guard let p0 = currentPoint else {
 					assert(false, "Expected current point")
+					break
 				}
 				
 				length += quadCurveLength(p0: p0, c1: c1, p1: p1)
@@ -196,6 +201,7 @@ public extension CGPath {
 				
 				guard let p0 = currentPoint else {
 					assert(false, "Expected current point")
+					break
 				}
 				
 				length += cubicCurveLength(p0: p0, c1: c1, c2: c2, p1: p1)
