@@ -26,35 +26,43 @@ Although there exists a formula to get the exact length between two points, it i
 
 > <img src="calculations-resources/linear-parametric.png" height="30" alt="">
 > 
-> *```t``` is defined in the range 0...1 (inclusive), 
-> where ```t = 0``` defines P0 and ```t = 1``` defines P1*
+> *```t``` is defined in the range ```0...1``` (inclusive), 
+> where ```t = 0``` defines ```P0``` and ```t = 1``` defines ```P1```*
 > 
 > This parametric formula needs to be evaluated for both the x and y coordinates of the two points, with an equal value for ```t```.
 > 
 > Note that the ```t``` factors add up to 1 (```(1 - t) + t```), this is required for this type of formulas to work.
 > 
-> See [Linear Parametric Function.gcx](calculations-resources/Linear Parametric Function.gcx) for an interactive example. (Grapher is included on every Mac and can be found in ```Applications/Utilities```)
+> See [Linear Parametric Function.gcx](calculations-resources/Linear Parametric Function.gcx) for an interactive example. <sup>[1](#footnote1)</sup>
 
 
 Quadratic curve
 ---------------
-Quadratic curves are defined by two points and one control point. The control point does not necessarily  represent a point on the curve, but can rather be thought of as "magnetic point" which attracts a parabolic-shaped curve to it.
+Quadratic curves are defined by two points and one control point. The control point does not necessarily  represent a point on the curve, but can rather be thought of as a "magnetic point" which attracts a parabolic-shaped curve to it.
 
 ### Parametric
 > <img src="calculations-resources/quadratic-parametric.png" height="30" alt="">
 > 
-> The same notes from [Linear](#parametric) apply here.
+> ```t``` is defined in the range ```0...1``` (inclusive), where ```t = 0``` defines ```P0``` and ```t = 1``` defines ```P2```
 > 
 > *```P0``` is the start point, ```P1``` the control point and ```P2``` the end point.*
+> 
+> This parametric formula needs to be evaluated for both the x and y coordinates of the two points, with an equal value for ```t```.
 > 
 > <img src="calculations-resources/quad-control-point.gif" height="300" alt="">
 > 
 > *This animation shows ```P1``` oscillating its ```x``` value between ```1``` and ```4```*
 > 
-> See [Quadratic Parametric Function.gcx](calculations-resources/Quadratic Parametric Function) for an interactive example.
+> See [Quadratic Parametric Function.gcx](calculations-resources/Quadratic Parametric Function) for an interactive example. <sup>[1](#footnote1)</sup>
 
 
 Cubic curve
 -----------
 
 ### Parametric
+
+
+
+Footnotes
+---------
+<a name="footnote1">1</a>: Grapher is included on every Mac and can be found in ```/Applications/Utilities```
