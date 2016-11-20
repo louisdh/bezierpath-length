@@ -28,6 +28,16 @@ let point = path.point(at: 0.5)
 * iOS 8.0+ / macOS 10.9+
 * Xcode 8.1+
 
+## Installation
+
+### [CocoaPods](http://cocoapods.org)
+
+To install, add the following line to your ```Podfile```:
+
+```ruby
+pod 'BezierPathLength', '~> 1.0.0'
+```
+
 ## How does it work?
 
 The actual calculations are implemented on a ```CGPath``` extension, but a ```[UI/NS]BezierPath``` extension is available for convenience.
