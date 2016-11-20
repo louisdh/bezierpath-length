@@ -41,6 +41,17 @@ Quadratic curve
 Quadratic curves are defined by two points and one control point. The control point does not necessarily  represent a point on the curve, but can rather be thought of as "magnetic point" which attracts a parabolic-shaped curve to it.
 
 ### Parametric
+> <img src="calculations-resources/quadratic-parametric.png" height="30" alt="">
+> 
+> The same notes from [Linear](#parametric) apply here.
+> 
+> *```P0``` is the start point, ```P1``` the control point and ```P2``` the end point.*
+> 
+> <img src="calculations-resources/quad-control-point.gif" height="300" alt="">
+> 
+> *This animation shows ```P1``` oscillating its ```x``` value between ```1``` and ```4```*
+> 
+> See [Quadratic Parametric Function.gcx](calculations-resources/Quadratic Parametric Function) for an interactive example.
 
 
 Cubic curve
