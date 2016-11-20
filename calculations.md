@@ -51,17 +51,27 @@ Quadratic curves are defined by two points and one control point. The control po
 > 
 > <img src="calculations-resources/quad-control-point.gif" height="300" alt="">
 > 
-> *This animation shows ```P1``` oscillating its ```x``` value between ```1``` and ```4```*
+> *This animation shows ```P1``` oscillating its ```x``` value between ```1``` and ```4```.*
+> 
+> *Note that when ```P0``` and ```P1``` have the same coordinates, the path is linear and ```P1``` becomes redundant.*
 > 
 > See [Quadratic Parametric Function.gcx](calculations-resources/Quadratic Parametric Function) for an interactive example. <sup>[1](#footnote1)</sup>
 
 
 Cubic curve
 -----------
+Cubic curves are defined by a start and end point and two control points. 
 
 ### Parametric
-
-
+> <img src="calculations-resources/cubic-parametric.png" height="30" alt="">
+> 
+> ```t``` is defined in the range ```0...1``` (inclusive), where ```t = 0``` defines ```P0``` and ```t = 1``` defines ```P3```
+> 
+> *```P0``` is the start point, ```P1``` and ```P2``` are control points and ```P3``` is the end point.*
+> 
+> This parametric formula needs to be evaluated for both the x and y coordinates of the two points, with an equal value for ```t```.
+> 
+> See [Quadratic Parametric Function.gcx](calculations-resources/Quadratic Parametric Function) for an interactive example. <sup>[1](#footnote1)</sup>
 
 Footnotes
 ---------
