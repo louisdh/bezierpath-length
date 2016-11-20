@@ -1,12 +1,12 @@
 # Bezier Path Calculations
 
-Any CGPath can be split into subpaths. Of which there are three types:
+Any CGPath can be split into subpaths, of which there are three types:
 
 * [Linear](#linear)
 * [Quadratic curve](#quadratic-curve)
 * [Cubic curve](#cubic-curve)
 
-When calculating the length of a CGPath we actually calculate the lengths of all the subpaths, and add those together. 
+When calculating the length of a CGPath we actually calculate the sum of the lengths of all the subpaths.
 
 Linear
 ------
@@ -72,6 +72,52 @@ Cubic curves are defined by a start and end point and two control points.
 > This parametric formula needs to be evaluated for both the x and y coordinates of the two points, with an equal value for ```t```.
 > 
 > See [Cubic Parametric Function.gcx](calculations-resources/Cubic Parametric Function.gcx) for an interactive example. <sup>[1](#footnote1)</sup>
+
+Overview
+--------
+The three subpath types essentially embody an increasingly higher degree of polynomials, as can be seen in the first term:
+
+| Name          | First term           
+| ------------- |:-------------:
+| Linear        | <img src="calculations-resources/linear-first-factor.png" height="30" alt="">
+| Quadratic     | <img src="calculations-resources/quad-first-factor.png" height="30" alt="">  
+| Cubic         | <img src="calculations-resources/cubic-first-factor.png" height="30" alt="">  
+
+Furthermore, these parametric functions can easily be memorized. The number of terms is equal to the ```degree + 1```:
+ 
+| Name          | Number of terms           
+| ------------- |:-------------:
+| Linear        | 2
+| Quadratic     | 3 
+| Cubic         | 4  
+
+Each term, the factor ```(1 - t)``` decreases its power by ```1```, starting at ```degree```. 
+And each term the factor ```t``` increases its power by ```1```, starting at ```0```.
+
+Finally, the coefficients of the terms can be found using Pascal's triangle:
+
+> <img src="calculations-resources/pascals-triangle.png" height="100" alt="">  
+> *source: [Wikipedia](https://en.wikipedia.org/wiki/Pascal's_triangle)*
+
+
+| Name          | Coefficients          
+| ------------- |:-------------:
+| Linear        | 1 1
+| Quadratic     | 1 2 1
+| Cubic         | 1 3 3 1  
+
+
+When showing the functions in one table, the pattern becomes clear:
+
+| Name          | Parametric function          
+| ------------- |:-------------:
+| Linear        | <img src="calculations-resources/linear-parametric.png" height="26" alt="">
+| Quadratic     | <img src="calculations-resources/quadratic-parametric.png" height="30" alt="">
+| Cubic         | <img src="calculations-resources/cubic-parametric.png" height="30" alt=""> 
+
+This pattern continues beyond cubic, but is out of scope for this project. 
+
+*To see more, check: [Bézier curve - Higher order curves on Wikipedia](https://en.wikipedia.org/wiki/Bézier_curve#Higher-order_curves)*
 
 Footnotes
 ---------
