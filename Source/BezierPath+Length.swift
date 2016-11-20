@@ -51,7 +51,7 @@ public extension CGPath {
 		return point(at: percent, with: elements)
 	}
 	
-	// MARK - Private
+	// MARK: - Private
 	
 	fileprivate func point(at percent: CGFloat, with elements: [PathElement]) -> CGPoint? {
 		
@@ -215,7 +215,7 @@ public extension CGPath {
 		
 	}
 	
-	// MARK - Linear
+	// MARK: - Linear
 
 	fileprivate func distanceBetween(point a: CGPoint, and b: CGPoint) -> CGFloat {
 		return sqrt(pow(a.x-b.x, 2) + pow(a.y-b.y, 2))
@@ -241,7 +241,7 @@ public extension CGPath {
 		
 	}
 
-	// MARK - Quadratic
+	// MARK: - Quadratic
 	
 	fileprivate func quadCurveLength(p0: CGPoint, c1: CGPoint, p1: CGPoint) -> CGFloat {
 
@@ -286,7 +286,7 @@ public extension CGPath {
 		
 	}
 
-	// MARK - Cubic
+	// MARK: - Cubic
 
 	fileprivate func cubicCurveLength(p0: CGPoint, c1: CGPoint, c2: CGPoint, p1: CGPoint) -> CGFloat {
 		
