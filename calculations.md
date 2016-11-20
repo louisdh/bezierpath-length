@@ -1,4 +1,4 @@
-# Bezier Path Calculations
+# Bézier Path Calculations
 
 Any ```CGPath``` can be split into subpaths, of which there are three types:
 
