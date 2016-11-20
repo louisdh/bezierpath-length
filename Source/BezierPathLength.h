@@ -6,7 +6,7 @@
 //  Copyright © 2016 Silver Fox. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import Foundation;
 
 //! Project version number for BezierPathLength.
 FOUNDATION_EXPORT double BezierPathLengthVersionNumber;

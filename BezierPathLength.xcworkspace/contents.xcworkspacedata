@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:BezierPathLength/BezierPathLength.xcodeproj">
+      location = "group:Example/../BezierPathLength.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:Example/Example.xcodeproj">
