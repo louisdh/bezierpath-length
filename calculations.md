@@ -55,7 +55,7 @@ Quadratic curves are defined by two points and one control point. The control po
 > 
 > *Note that when ```P0``` and ```P1``` have the same coordinates, the path is linear and ```P1``` becomes redundant.*
 > 
-> See [Quadratic Parametric Function.gcx](calculations-resources/Quadratic Parametric Function) for an interactive example. <sup>[1](#footnote1)</sup>
+> See [Quadratic Parametric Function.gcx](calculations-resources/Quadratic Parametric Function.gcx) for an interactive example. <sup>[1](#footnote1)</sup>
 
 
 Cubic curve
@@ -71,7 +71,7 @@ Cubic curves are defined by a start and end point and two control points.
 > 
 > This parametric formula needs to be evaluated for both the x and y coordinates of the two points, with an equal value for ```t```.
 > 
-> See [Quadratic Parametric Function.gcx](calculations-resources/Quadratic Parametric Function) for an interactive example. <sup>[1](#footnote1)</sup>
+> See [Cubic Parametric Function.gcx](calculations-resources/Cubic Parametric Function.gcx) for an interactive example. <sup>[1](#footnote1)</sup>
 
 Footnotes
 ---------
