@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE62A87C1DE63D4900A75453 /* BezierPathLength watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62A87A1DE63D4900A75453 /* BezierPathLength watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE62A8801DE63D5000A75453 /* BezierPath+Length.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9254F21DE1F5160004AD58 /* BezierPath+Length.swift */; };
+		BE62A8811DE63D5000A75453 /* PathElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9254F51DE1F5160004AD58 /* PathElement.swift */; };
+		BE62A88B1DE63E0B00A75453 /* BezierPathLength tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = BE62A8891DE63E0B00A75453 /* BezierPathLength tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE62A88F1DE63E1500A75453 /* BezierPath+Length.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9254F21DE1F5160004AD58 /* BezierPath+Length.swift */; };
+		BE62A8901DE63E1500A75453 /* PathElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9254F51DE1F5160004AD58 /* PathElement.swift */; };
 		BE8116261DDFB02A00FD263E /* BezierPathLength.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE81161C1DDFB02900FD263E /* BezierPathLength.framework */; };
 		BE81162B1DDFB02A00FD263E /* BezierPathLengthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE81162A1DDFB02A00FD263E /* BezierPathLengthTests.swift */; };
 		BE9254F61DE1F5160004AD58 /* BezierPath+Length.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9254F21DE1F5160004AD58 /* BezierPath+Length.swift */; };
@@ -28,6 +34,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE62A8781DE63D4900A75453 /* BezierPathLength.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BezierPathLength.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE62A87A1DE63D4900A75453 /* BezierPathLength watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BezierPathLength watchOS.h"; sourceTree = "<group>"; };
+		BE62A87B1DE63D4900A75453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE62A8871DE63E0B00A75453 /* BezierPathLength.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BezierPathLength.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE62A8891DE63E0B00A75453 /* BezierPathLength tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BezierPathLength tvOS.h"; sourceTree = "<group>"; };
+		BE62A88A1DE63E0B00A75453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE81161C1DDFB02900FD263E /* BezierPathLength.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BezierPathLength.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE8116251DDFB02A00FD263E /* BezierPathLengthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BezierPathLengthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE81162A1DDFB02A00FD263E /* BezierPathLengthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BezierPathLengthTests.swift; sourceTree = "<group>"; };
@@ -42,6 +54,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BE62A8741DE63D4900A75453 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE62A8831DE63E0B00A75453 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BE8116181DDFB02900FD263E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -67,12 +93,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE62A8791DE63D4900A75453 /* BezierPathLength watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				BE62A87A1DE63D4900A75453 /* BezierPathLength watchOS.h */,
+				BE62A87B1DE63D4900A75453 /* Info.plist */,
+			);
+			path = "BezierPathLength watchOS";
+			sourceTree = "<group>";
+		};
+		BE62A8881DE63E0B00A75453 /* BezierPathLength tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				BE62A8891DE63E0B00A75453 /* BezierPathLength tvOS.h */,
+				BE62A88A1DE63E0B00A75453 /* Info.plist */,
+			);
+			path = "BezierPathLength tvOS";
+			sourceTree = "<group>";
+		};
+		BE62A8911DE63E6800A75453 /* BezierPathLength iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BE9254F31DE1F5160004AD58 /* BezierPathLength.h */,
+				BE9254F41DE1F5160004AD58 /* Info.plist */,
+			);
+			name = "BezierPathLength iOS";
+			sourceTree = "<group>";
+		};
 		BE8116121DDFB02900FD263E = {
 			isa = PBXGroup;
 			children = (
 				BE81161E1DDFB02900FD263E /* Source */,
+				BE62A8911DE63E6800A75453 /* BezierPathLength iOS */,
 				BE8116291DDFB02A00FD263E /* BezierPathLengthTests */,
 				BEF6CE041DE2001A0083BDC7 /* BezierPathLength macOS */,
+				BE62A8791DE63D4900A75453 /* BezierPathLength watchOS */,
+				BE62A8881DE63E0B00A75453 /* BezierPathLength tvOS */,
 				BE81161D1DDFB02900FD263E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,6 +139,8 @@
 				BE81161C1DDFB02900FD263E /* BezierPathLength.framework */,
 				BE8116251DDFB02A00FD263E /* BezierPathLengthTests.xctest */,
 				BEF6CE031DE2001A0083BDC7 /* BezierPathLength.framework */,
+				BE62A8781DE63D4900A75453 /* BezierPathLength.framework */,
+				BE62A8871DE63E0B00A75453 /* BezierPathLength.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,8 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				BE9254F21DE1F5160004AD58 /* BezierPath+Length.swift */,
-				BE9254F31DE1F5160004AD58 /* BezierPathLength.h */,
-				BE9254F41DE1F5160004AD58 /* Info.plist */,
 				BE9254F51DE1F5160004AD58 /* PathElement.swift */,
 			);
 			name = Source;
@@ -120,6 +176,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		BE62A8751DE63D4900A75453 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE62A87C1DE63D4900A75453 /* BezierPathLength watchOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE62A8841DE63E0B00A75453 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE62A88B1DE63E0B00A75453 /* BezierPathLength tvOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BE8116191DDFB02900FD263E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -139,6 +211,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		BE62A8771DE63D4900A75453 /* BezierPathLength watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE62A87F1DE63D4900A75453 /* Build configuration list for PBXNativeTarget "BezierPathLength watchOS" */;
+			buildPhases = (
+				BE62A8731DE63D4900A75453 /* Sources */,
+				BE62A8741DE63D4900A75453 /* Frameworks */,
+				BE62A8751DE63D4900A75453 /* Headers */,
+				BE62A8761DE63D4900A75453 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BezierPathLength watchOS";
+			productName = "BezierPathLength watchOS";
+			productReference = BE62A8781DE63D4900A75453 /* BezierPathLength.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BE62A8861DE63E0B00A75453 /* BezierPathLength tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE62A88C1DE63E0B00A75453 /* Build configuration list for PBXNativeTarget "BezierPathLength tvOS" */;
+			buildPhases = (
+				BE62A8821DE63E0B00A75453 /* Sources */,
+				BE62A8831DE63E0B00A75453 /* Frameworks */,
+				BE62A8841DE63E0B00A75453 /* Headers */,
+				BE62A8851DE63E0B00A75453 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BezierPathLength tvOS";
+			productName = "BezierPathLength tvOS";
+			productReference = BE62A8871DE63E0B00A75453 /* BezierPathLength.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		BE81161B1DDFB02900FD263E /* BezierPathLength iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE8116301DDFB02A00FD263E /* Build configuration list for PBXNativeTarget "BezierPathLength iOS" */;
@@ -203,6 +311,16 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Silver Fox";
 				TargetAttributes = {
+					BE62A8771DE63D4900A75453 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 6G5LMQ72D8;
+						ProvisioningStyle = Automatic;
+					};
+					BE62A8861DE63E0B00A75453 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 6G5LMQ72D8;
+						ProvisioningStyle = Automatic;
+					};
 					BE81161B1DDFB02900FD263E = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 6G5LMQ72D8;
@@ -234,13 +352,29 @@
 			projectRoot = "";
 			targets = (
 				BE81161B1DDFB02900FD263E /* BezierPathLength iOS */,
-				BE8116241DDFB02A00FD263E /* BezierPathLengthTests */,
 				BEF6CE021DE2001A0083BDC7 /* BezierPathLength macOS */,
+				BE62A8771DE63D4900A75453 /* BezierPathLength watchOS */,
+				BE62A8861DE63E0B00A75453 /* BezierPathLength tvOS */,
+				BE8116241DDFB02A00FD263E /* BezierPathLengthTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BE62A8761DE63D4900A75453 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE62A8851DE63E0B00A75453 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BE81161A1DDFB02900FD263E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,6 +399,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BE62A8731DE63D4900A75453 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE62A8801DE63D5000A75453 /* BezierPath+Length.swift in Sources */,
+				BE62A8811DE63D5000A75453 /* PathElement.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE62A8821DE63E0B00A75453 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE62A88F1DE63E1500A75453 /* BezierPath+Length.swift in Sources */,
+				BE62A8901DE63E1500A75453 /* PathElement.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BE8116171DDFB02900FD263E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -302,6 +454,100 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		BE62A87D1DE63D4900A75453 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6G5LMQ72D8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "BezierPathLength watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "be.silverfox.BezierPathLength-watchOS";
+				PRODUCT_MODULE_NAME = BezierPathLength;
+				PRODUCT_NAME = BezierPathLength;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		BE62A87E1DE63D4900A75453 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6G5LMQ72D8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "BezierPathLength watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "be.silverfox.BezierPathLength-watchOS";
+				PRODUCT_MODULE_NAME = BezierPathLength;
+				PRODUCT_NAME = BezierPathLength;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		BE62A88D1DE63E0B00A75453 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6G5LMQ72D8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "BezierPathLength tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "be.silverfox.BezierPathLength-tvOS";
+				PRODUCT_MODULE_NAME = BezierPathLength;
+				PRODUCT_NAME = BezierPathLength;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		BE62A88E1DE63E0B00A75453 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6G5LMQ72D8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "BezierPathLength tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "be.silverfox.BezierPathLength-tvOS";
+				PRODUCT_MODULE_NAME = BezierPathLength;
+				PRODUCT_NAME = BezierPathLength;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
 		BE81162E1DDFB02A00FD263E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -523,6 +769,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BE62A87F1DE63D4900A75453 /* Build configuration list for PBXNativeTarget "BezierPathLength watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE62A87D1DE63D4900A75453 /* Debug */,
+				BE62A87E1DE63D4900A75453 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BE62A88C1DE63E0B00A75453 /* Build configuration list for PBXNativeTarget "BezierPathLength tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE62A88D1DE63E0B00A75453 /* Debug */,
+				BE62A88E1DE63E0B00A75453 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		BE8116161DDFB02900FD263E /* Build configuration list for PBXProject "BezierPathLength" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -557,6 +819,7 @@
 				BEF6CE0A1DE2001A0083BDC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
