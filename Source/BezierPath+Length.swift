@@ -29,15 +29,21 @@ import CoreGraphics
 			
 			for i in 0 ..< self.elementCount {
 				let type = self.element(at: i, associatedPoints: &points)
+				
 				switch type {
+					
 				case .moveToBezierPathElement:
 					path.move(to: points[0])
+					
 				case .lineToBezierPathElement:
 					path.addLine(to: points[0])
+					
 				case .curveToBezierPathElement:
 					path.addCurve(to: points[2], control1: points[0], control2: points[1])
+					
 				case .closePathBezierPathElement:
 					path.closeSubpath()
+					
 				}
 			}
 			
@@ -51,6 +57,7 @@ public extension BezierPath {
 
 	/// Length of path in pt
 	public var length: CGFloat {
+		
 		return cgPath.length
 	}
 	
@@ -59,6 +66,7 @@ public extension BezierPath {
 	/// - Parameter percent: Percentage of path, between 0.0 and 1.0 (inclusive)
 	/// - Returns: Point on the path
 	public func point(at percent: CGFloat) -> CGPoint? {
+		
 		return cgPath.point(at: percent)
 	}
 	
@@ -68,7 +76,7 @@ public extension CGPath {
 	
 	/// Length of path in pt
 	public var length: CGFloat {
-
+		
 		return getLength(with: elements)
 	}
 	
@@ -77,7 +85,7 @@ public extension CGPath {
 	/// - Parameter percent: Percentage of path, between 0.0 and 1.0 (inclusive)
 	/// - Returns: Point on the path
 	public func point(at percent: CGFloat) -> CGPoint? {
-
+		
 		return point(at: percent, with: elements)
 	}
 	
@@ -110,7 +118,7 @@ public extension CGPath {
 					break
 				}
 				
-				let l = distanceBetween(point: p0, and: p1)
+				let l = linearLength(p0: p0, p1: p1)
 				
 				if lengthTraversed + l >= percentLength {
 					
@@ -201,16 +209,16 @@ public extension CGPath {
 				
 				break
 				
-			case let .addLine(to: t):
+			case let .addLine(to: p1):
 				
-				guard let b = currentPoint else {
+				guard let p0 = currentPoint else {
 					assert(false, "Expected current point")
 					break
 				}
 				
-				length += distanceBetween(point: t, and: b)
+				length += linearLength(p0: p0, p1: p1)
 				
-				currentPoint = t
+				currentPoint = p1
 				
 				break
 				
@@ -253,8 +261,8 @@ public extension CGPath {
 	
 	// MARK: - Linear
 
-	fileprivate func distanceBetween(point a: CGPoint, and b: CGPoint) -> CGFloat {
-		return sqrt(pow(a.x-b.x, 2) + pow(a.y-b.y, 2))
+	fileprivate func linearLength(p0: CGPoint, p1: CGPoint) -> CGFloat {
+		return p0.distance(to: p1)
 	}
 	
 	fileprivate func linearPoint(t: CGFloat, p0: CGPoint, p1: CGPoint) -> CGPoint {
@@ -293,7 +301,7 @@ public extension CGPath {
 			let a = quadCurvePoint(t: t0, p0: p0, c1: c1, p1: p1)
 			let b = quadCurvePoint(t: t1, p0: p0, c1: c1, p1: p1)
 			
-			approxDist += distanceBetween(point: a, and: b)
+			approxDist += a.distance(to: b)
 			
 		}
 		
@@ -338,7 +346,7 @@ public extension CGPath {
 			let a = cubicCurvePoint(t: t0, p0: p0, c1: c1, c2: c2, p1: p1)
 			let b = cubicCurvePoint(t: t1, p0: p0, c1: c1, c2: c2, p1: p1)
 			
-			approxDist += distanceBetween(point: a, and: b)
+			approxDist += a.distance(to: b)
 			
 		}
 		
@@ -366,6 +374,16 @@ public extension CGPath {
 		value += pow(t, 3) * p1
 		
 		return value;
+	}
+	
+}
+
+fileprivate extension CGPoint {
+	
+	func distance(to point: CGPoint) -> CGFloat {
+		let a = self
+		let b = point
+		return sqrt(pow(a.x-b.x, 2) + pow(a.y-b.y, 2))
 	}
 	
 }
