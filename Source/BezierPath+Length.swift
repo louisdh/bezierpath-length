@@ -89,9 +89,13 @@ public extension CGPath {
 		return point(at: percent, with: elements)
 	}
 	
-	// MARK: - Private
+}
+
+extension CGPath {
+
+	// MARK: - Internal
 	
-	fileprivate func point(at percent: CGFloat, with elements: [PathElement]) -> CGPoint? {
+	func point(at percent: CGFloat, with elements: [PathElement]) -> CGPoint? {
 		
 		if percent < 0.0 || percent > 1.0 {
 			return nil
@@ -194,7 +198,7 @@ public extension CGPath {
 		return nil
 	}
 
-	fileprivate func getLength(with elements: [PathElement]) -> CGFloat {
+	func getLength(with elements: [PathElement]) -> CGFloat {
 		
 		/// Holds current point on the path (must never be a control point)
 		var currentPoint: CGPoint?
@@ -261,11 +265,11 @@ public extension CGPath {
 	
 	// MARK: - Linear
 
-	fileprivate func linearLength(p0: CGPoint, p1: CGPoint) -> CGFloat {
+	func linearLength(p0: CGPoint, p1: CGPoint) -> CGFloat {
 		return p0.distance(to: p1)
 	}
 	
-	fileprivate func linearPoint(t: CGFloat, p0: CGPoint, p1: CGPoint) -> CGPoint {
+	func linearPoint(t: CGFloat, p0: CGPoint, p1: CGPoint) -> CGPoint {
 		
 		let x = linearValue(t: t, p0: p0.x, p1: p1.x)
 		let y = linearValue(t: t, p0: p0.y, p1: p1.y)
@@ -273,7 +277,7 @@ public extension CGPath {
 		return CGPoint(x: x, y: y)
 	}
 	
-	fileprivate func linearValue(t: CGFloat, p0: CGFloat, p1: CGFloat) -> CGFloat {
+	func linearValue(t: CGFloat, p0: CGFloat, p1: CGFloat) -> CGFloat {
 		
 		var value: CGFloat = 0.0
 		
@@ -287,7 +291,7 @@ public extension CGPath {
 
 	// MARK: - Quadratic
 	
-	fileprivate func quadCurveLength(p0: CGPoint, c1: CGPoint, p1: CGPoint) -> CGFloat {
+	func quadCurveLength(p0: CGPoint, c1: CGPoint, p1: CGPoint) -> CGFloat {
 
 		var approxDist: CGFloat = 0
 		
@@ -308,7 +312,7 @@ public extension CGPath {
 		return approxDist
 	}
 	
-	fileprivate func quadCurvePoint(t: CGFloat, p0: CGPoint, c1: CGPoint, p1: CGPoint) -> CGPoint {
+	func quadCurvePoint(t: CGFloat, p0: CGPoint, c1: CGPoint, p1: CGPoint) -> CGPoint {
 
 		let x = quadCurveValue(t: t, p0: p0.x, c1: c1.x, p1: p1.x)
 		let y = quadCurveValue(t: t, p0: p0.y, c1: c1.y, p1: p1.y)
@@ -317,7 +321,7 @@ public extension CGPath {
 		
 	}
 	
-	fileprivate func quadCurveValue(t: CGFloat, p0: CGFloat, c1: CGFloat, p1: CGFloat) -> CGFloat {
+	func quadCurveValue(t: CGFloat, p0: CGFloat, c1: CGFloat, p1: CGFloat) -> CGFloat {
 
 		var value: CGFloat = 0.0
 		
@@ -332,7 +336,7 @@ public extension CGPath {
 
 	// MARK: - Cubic
 
-	fileprivate func cubicCurveLength(p0: CGPoint, c1: CGPoint, c2: CGPoint, p1: CGPoint) -> CGFloat {
+	func cubicCurveLength(p0: CGPoint, c1: CGPoint, c2: CGPoint, p1: CGPoint) -> CGFloat {
 		
 		var approxDist: CGFloat = 0
 		
@@ -354,7 +358,7 @@ public extension CGPath {
 		
 	}
 	
-	fileprivate func cubicCurvePoint(t: CGFloat, p0: CGPoint, c1: CGPoint, c2: CGPoint, p1: CGPoint) -> CGPoint {
+	func cubicCurvePoint(t: CGFloat, p0: CGPoint, c1: CGPoint, c2: CGPoint, p1: CGPoint) -> CGPoint {
 		
 		let x = cubicCurveValue(t: t, p0: p0.x, c1: c1.x, c2: c2.x, p1: p1.x)
 		let y = cubicCurveValue(t: t, p0: p0.y, c1: c1.y, c2: c2.y, p1: p1.y)
@@ -363,7 +367,7 @@ public extension CGPath {
 
 	}
 	
-	fileprivate func cubicCurveValue(t: CGFloat, p0: CGFloat, c1: CGFloat, c2: CGFloat, p1: CGFloat) -> CGFloat {
+	func cubicCurveValue(t: CGFloat, p0: CGFloat, c1: CGFloat, c2: CGFloat, p1: CGFloat) -> CGFloat {
 		
 		var value: CGFloat = 0.0
 		
@@ -378,7 +382,7 @@ public extension CGPath {
 	
 }
 
-fileprivate extension CGPoint {
+extension CGPoint {
 	
 	func distance(to point: CGPoint) -> CGFloat {
 		let a = self

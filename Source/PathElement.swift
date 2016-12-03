@@ -47,9 +47,9 @@ enum PathElement {
 
 extension CGPath {
 	
-	fileprivate typealias PathApplier = @convention(block) (UnsafePointer<CGPathElement>) -> Void
+	typealias PathApplier = @convention(block) (UnsafePointer<CGPathElement>) -> Void
 	
-	fileprivate func apply(with applier: PathApplier) {
+	func apply(with applier: PathApplier) {
 		
 		let callback: @convention(c) (UnsafeMutableRawPointer, UnsafePointer<CGPathElement>) -> Void = { (info, element) in
 			
