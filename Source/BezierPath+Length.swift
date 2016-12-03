@@ -103,7 +103,9 @@ extension CGPath {
 		
 		let percentLength = length * percent
 		var lengthTraversed: CGFloat = 0
-		
+
+		var firstPointInSubpath: CGPoint?
+
 		/// Holds current point on the path (must never be a control point)
 		var currentPoint: CGPoint?
 		
@@ -112,6 +114,10 @@ extension CGPath {
 			switch(e) {
 			case let .move(to: p0):
 				currentPoint = p0
+				
+				if firstPointInSubpath == nil {
+					firstPointInSubpath = p0
+				}
 				
 				break
 				
@@ -189,6 +195,33 @@ extension CGPath {
 				break
 				
 			case .closeSubpath:
+				
+				guard let p0 = currentPoint else {
+					break
+				}
+				
+				if let p1 = firstPointInSubpath {
+					
+					let l = linearLength(p0: p0, p1: p1)
+					
+					if lengthTraversed + l >= percentLength {
+						
+						let lengthInSubpath = percentLength - lengthTraversed;
+						
+						let t = lengthInSubpath / l
+						
+						return linearPoint(t: t, p0: p0, p1: p1)
+						
+					}
+					
+					lengthTraversed += l
+					
+					currentPoint = p1
+
+				}
+				
+				firstPointInSubpath = nil
+				
 				break
 				
 			}
@@ -200,6 +233,8 @@ extension CGPath {
 
 	func getLength(with elements: [PathElement]) -> CGFloat {
 		
+		var firstPointInSubpath: CGPoint?
+
 		/// Holds current point on the path (must never be a control point)
 		var currentPoint: CGPoint?
 		
@@ -210,6 +245,10 @@ extension CGPath {
 			switch(e) {
 			case let .move(to: p0):
 				currentPoint = p0
+				
+				if firstPointInSubpath == nil {
+					firstPointInSubpath = p0
+				}
 				
 				break
 				
@@ -253,6 +292,21 @@ extension CGPath {
 				break
 				
 			case .closeSubpath:
+				
+				guard let p0 = currentPoint else {
+					break
+				}
+				
+				if let p1 = firstPointInSubpath {
+					
+					length += linearLength(p0: p0, p1: p1)
+					
+					currentPoint = p1
+					
+				}
+				
+				firstPointInSubpath = nil
+				
 				break
 
 			}
