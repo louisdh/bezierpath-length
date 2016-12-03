@@ -56,6 +56,5 @@ script:
     fi
 
 after_success:
-  - if [ $CODE_COV == "YES" ]; then
-    - bash <(curl -s https://codecov.io/bash) -cF ios
-    fi
+  - bash <(curl -s https://codecov.io/bash)
+
