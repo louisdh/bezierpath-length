@@ -21,16 +21,24 @@ class BezierPathLengthTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
+	func testLinearDistance() {
+		
+		let a = CGPoint(x: 1, y: 1)
+		let b = CGPoint(x: 4, y: 5)
+		
+		let distance = a.distance(to: b)
+		
+		assert(distance == 5.0, "Distance was incorrect")
+	}
+	
+	func testRectangleLength() {
+		
+		let rect = CGRect(origin: .zero, size: CGSize(width: 100, height: 100))
+		let path = UIBezierPath(rect: rect)
+
+		let length = path.length
+		
+		assert(length == 400.0, "Length was incorrect")
+	}
+
 }

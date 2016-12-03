@@ -125,10 +125,10 @@
 			children = (
 				BE81161E1DDFB02900FD263E /* Source */,
 				BE62A8911DE63E6800A75453 /* BezierPathLength iOS */,
-				BE8116291DDFB02A00FD263E /* BezierPathLengthTests */,
 				BEF6CE041DE2001A0083BDC7 /* BezierPathLength macOS */,
 				BE62A8791DE63D4900A75453 /* BezierPathLength watchOS */,
 				BE62A8881DE63E0B00A75453 /* BezierPathLength tvOS */,
+				BE8116291DDFB02A00FD263E /* Tests */,
 				BE81161D1DDFB02900FD263E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -155,12 +155,13 @@
 			path = BezierPathLength;
 			sourceTree = "<group>";
 		};
-		BE8116291DDFB02A00FD263E /* BezierPathLengthTests */ = {
+		BE8116291DDFB02A00FD263E /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				BE81162A1DDFB02A00FD263E /* BezierPathLengthTests.swift */,
 				BE81162C1DDFB02A00FD263E /* Info.plist */,
 			);
+			name = Tests;
 			path = BezierPathLengthTests;
 			sourceTree = "<group>";
 		};
@@ -776,6 +777,7 @@
 				BE62A87E1DE63D4900A75453 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE62A88C1DE63E0B00A75453 /* Build configuration list for PBXNativeTarget "BezierPathLength tvOS" */ = {
 			isa = XCConfigurationList;
@@ -784,6 +786,7 @@
 				BE62A88E1DE63E0B00A75453 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE8116161DDFB02900FD263E /* Build configuration list for PBXProject "BezierPathLength" */ = {
 			isa = XCConfigurationList;
