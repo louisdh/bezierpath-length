@@ -1,6 +1,7 @@
 # [UI/NS]BezierPath + Length
 
 [![Build Status](https://travis-ci.org/LouisDhauwe/BezierPath-Length.svg?branch=master)](https://travis-ci.org/LouisDhauwe/BezierPath-Length)
+[![codecov](https://codecov.io/gh/LouisDhauwe/BezierPath-Length/branch/master/graph/badge.svg)](https://codecov.io/gh/LouisDhauwe/BezierPath-Length)
 [![Code Climate](https://codeclimate.com/github/LouisDhauwe/BezierPath-Length/badges/gpa.svg)](https://codeclimate.com/github/LouisDhauwe/BezierPath-Length)
 [![Swift](https://img.shields.io/badge/Swift-3.0.1-orange.svg?style=flat")](https://developer.apple.com/swift/)
 ![PodVersion](https://img.shields.io/cocoapods/v/BezierPathLength.svg)
