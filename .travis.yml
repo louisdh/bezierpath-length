@@ -52,7 +52,6 @@ script:
 
   # Build and report code coverage if specified
   - if [ $CODE_COV == "YES" ]; then
-    xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Release ONLY_ACTIVE_ARCH=YES -enableCodeCoverage YES test
-    bash <(curl -s https://codecov.io/bash) -cF ios
+      xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Release ONLY_ACTIVE_ARCH=YES -enableCodeCoverage YES test
+      bash <(curl -s https://codecov.io/bash) -cF ios
     fi
-
