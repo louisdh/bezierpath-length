@@ -57,6 +57,43 @@ class BezierPathLengthTests: XCTestCase {
 
 	}
 	
+	func testSubpathEndPoint() {
+		
+		let path = UIBezierPath()
+		path.move(to: .zero)
+		path.addLine(to: CGPoint(x: 100, y: 0))
+		path.addLine(to: CGPoint(x: 100, y: 100))
+		path.addLine(to: CGPoint(x: 0, y: 100))
+		path.close()
+		path.move(to: CGPoint(x: 100, y: 100))
+		path.addLine(to: CGPoint(x: 200, y: 100))
+		path.addLine(to: CGPoint(x: 200, y: 200))
+		path.addLine(to: CGPoint(x: 100, y: 200))
+		path.close()
+		
+		let halfPoint = path.point(at: 1.0)
+		
+		let expectedPoint = CGPoint(x: 100, y: 100)
+		
+		assert(halfPoint == expectedPoint, "Point was incorrect")
+		
+	}
+	
+	func testInvalidPath() {
+		
+		let path = UIBezierPath()
+		path.addLine(to: CGPoint(x: 100, y: 0))
+
+		let length = path.length
+		
+		assert(length == 0.0, "Length was incorrect")
+		
+		let point = path.point(at: 0.0)
+
+		assert(point == nil, "Point was incorrect")
+
+	}
+	
 	func testInvalidPoint() {
 		
 		let rect = CGRect(origin: .zero, size: CGSize(width: 100, height: 100))
