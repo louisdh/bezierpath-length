@@ -1,11 +1,11 @@
 # [UI/NS]BezierPath + Length
 
-[![Build Status](https://travis-ci.org/LouisDhauwe/BezierPath-Length.svg?branch=master)](https://travis-ci.org/LouisDhauwe/BezierPath-Length)
-[![codecov](https://codecov.io/gh/LouisDhauwe/BezierPath-Length/branch/master/graph/badge.svg)](https://codecov.io/gh/LouisDhauwe/BezierPath-Length)
-[![Code Climate](https://codeclimate.com/github/LouisDhauwe/BezierPath-Length/badges/gpa.svg)](https://codeclimate.com/github/LouisDhauwe/BezierPath-Length)
+[![Build Status](https://travis-ci.org/louisdh/bezierpath-length.svg?branch=master)](https://travis-ci.org/louisdh/bezierpath-length)
+[![codecov](https://codecov.io/gh/louisdh/bezierpath-length/branch/master/graph/badge.svg)](https://codecov.io/gh/louisdh/bezierpath-length)
+[![Code Climate](https://codeclimate.com/github/louisdh/bezierpath-length/badges/gpa.svg)](https://codeclimate.com/github/louisdh/bezierpath-length)
 [![Swift](https://img.shields.io/badge/Swift-3.0.1-orange.svg?style=flat")](https://developer.apple.com/swift/)
 ![PodVersion](https://img.shields.io/cocoapods/v/BezierPathLength.svg)
-![Platform](https://img.shields.io/badge/Platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-lightgrey.svg)
+![platform](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-lightgrey.svg)
 [![Twitter](https://img.shields.io/badge/Twitter-@LouisDhauwe-blue.svg?style=flat)](http://twitter.com/LouisDhauwe)
 
 This project provides a simple API to get the length of either a ```UIBezierPath``` or ```NSBezierPath```. Example:
@@ -29,7 +29,7 @@ let point = path.point(at: 0.5)
 
 ## Requirements
 
-* iOS 8.0+ / macOS 10.9+
+* iOS 8.0+ / macOS 10.9+ / tvOS 9.0+ / watchOS 2.0+
 * Xcode 8.1+
 
 ## Installation
