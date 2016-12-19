@@ -309,33 +309,37 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Silver Fox";
 				TargetAttributes = {
 					BE62A8771DE63D4900A75453 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 6G5LMQ72D8;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					BE62A8861DE63E0B00A75453 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 6G5LMQ72D8;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					BE81161B1DDFB02900FD263E = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 6G5LMQ72D8;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					BE8116241DDFB02A00FD263E = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 6G5LMQ72D8;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					BEF6CE021DE2001A0083BDC7 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 6G5LMQ72D8;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -567,6 +571,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -621,6 +626,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -669,7 +675,7 @@
 				PRODUCT_NAME = BezierPathLength;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -691,7 +697,7 @@
 				PRODUCT_MODULE_NAME = BezierPathLength;
 				PRODUCT_NAME = BezierPathLength;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -704,7 +710,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = be.silverfox.BezierPathLengthTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -717,7 +723,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = be.silverfox.BezierPathLengthTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
