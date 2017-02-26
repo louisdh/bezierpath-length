@@ -13,22 +13,22 @@ import CoreGraphics
 
 /// Swifty version of `CGPathElement` & `CGPathElementType`
 enum PathElement {
-	
+
 	/// The path element that starts a new subpath. The element holds a single point for the destination.
 	case move(to: CGPoint)
-	
+
 	/// The path element that adds a line from the current point to a new point. The element holds a single point for the destination.
 	case addLine(to: CGPoint)
 
 	/// The path element that adds a quadratic curve from the current point to the specified point. The element holds a control point and a destination point.
 	case addQuadCurve(CGPoint, to: CGPoint)
-	
+
 	/// The path element that adds a cubic curve from the current point to the specified point. The element holds two control points and a destination point.
 	case addCurve(CGPoint, CGPoint, to: CGPoint)
-	
+
 	/// The path element that closes and completes a subpath. The element does not contain any points.
 	case closeSubpath
-	
+
 	init(element: CGPathElement) {
 		switch element.type {
 		case .moveToPoint:
@@ -46,32 +46,32 @@ enum PathElement {
 }
 
 extension CGPath {
-	
+
 	typealias PathApplier = @convention(block) (UnsafePointer<CGPathElement>) -> Void
-	
+
 	func apply(with applier: PathApplier) {
-		
+
 		let callback: @convention(c) (UnsafeMutableRawPointer, UnsafePointer<CGPathElement>) -> Void = { (info, element) in
-			
+
 			let block = unsafeBitCast(info, to: PathApplier.self)
 			block(element)
-			
+
 		}
-		
+
 		self.apply(info: unsafeBitCast(applier, to: UnsafeMutableRawPointer.self), function: unsafeBitCast(callback, to: CGPathApplierFunction.self))
 	}
-	
+
 	var elements: [PathElement] {
 		var pathElements = [PathElement]()
-		
+
 		apply { (element) in
-			
+
 			let pathElement = PathElement(element: element.pointee)
 			pathElements.append(pathElement)
-			
+
 		}
-		
+
 		return pathElements
 	}
-	
+
 }
