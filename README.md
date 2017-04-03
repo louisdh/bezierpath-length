@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/louisdh/bezierpath-length.svg?branch=master)](https://travis-ci.org/louisdh/bezierpath-length)
 [![codecov](https://codecov.io/gh/louisdh/bezierpath-length/branch/master/graph/badge.svg)](https://codecov.io/gh/louisdh/bezierpath-length)
 [![Code Climate](https://codeclimate.com/github/louisdh/bezierpath-length/badges/gpa.svg)](https://codeclimate.com/github/louisdh/bezierpath-length)
-[![Swift](https://img.shields.io/badge/Swift-3.0.2-orange.svg?style=flat")](https://developer.apple.com/swift/)
+[![Swift](https://img.shields.io/badge/Swift-3.1-orange.svg?style=flat")](https://developer.apple.com/swift/)
 ![PodVersion](https://img.shields.io/cocoapods/v/BezierPathLength.svg)
 ![platform](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-lightgrey.svg)
 [![Twitter](https://img.shields.io/badge/Twitter-@LouisDhauwe-blue.svg?style=flat)](http://twitter.com/LouisDhauwe)
@@ -30,7 +30,7 @@ let point = path.point(at: 0.5)
 ## Requirements
 
 * iOS 8.0+ / macOS 10.9+ / tvOS 9.0+ / watchOS 2.0+
-* Xcode 8.2+
+* Xcode 8.3+
 
 ## Installation
 
