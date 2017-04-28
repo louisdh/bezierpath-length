@@ -33,7 +33,7 @@ Although there exists a formula to get the exact length between two points, it i
 > 
 > Note that the ```t``` factors add up to 1 (```(1 - t) + t```), this is required for this type of formulas to work.
 > 
-> See [Linear Parametric Function.gcx](calculations-resources/Linear Parametric Function.gcx) for an interactive example. <sup>[1](#footnote1)</sup>
+> See [Linear Parametric Function.gcx](calculations-resources/Linear%20Parametric%20Function.gcx) for an interactive example. <sup>[1](#footnote1)</sup>
 
 
 Quadratic curve
@@ -55,7 +55,7 @@ Quadratic curves are defined by two points and one control point. The control po
 > 
 > *Note that when ```P0``` and ```P1``` have the same coordinates, the path is linear and ```P1``` becomes redundant.*
 > 
-> See [Quadratic Parametric Function.gcx](calculations-resources/Quadratic Parametric Function.gcx) for an interactive example. <sup>[1](#footnote1)</sup>
+> See [Quadratic Parametric Function.gcx](calculations-resources/Quadratic%20Parametric%20Function.gcx) for an interactive example. <sup>[1](#footnote1)</sup>
 
 
 Cubic curve
@@ -71,7 +71,7 @@ Cubic curves are defined by a start and end point and two control points.
 > 
 > This parametric formula needs to be evaluated for both the x and y coordinates of the two points, with an equal value for ```t```.
 > 
-> See [Cubic Parametric Function.gcx](calculations-resources/Cubic Parametric Function.gcx) for an interactive example. <sup>[1](#footnote1)</sup>
+> See [Cubic Parametric Function.gcx](calculations-resources/Cubic%20Parametric%20Function.gcx) for an interactive example. <sup>[1](#footnote1)</sup>
 
 Overview
 --------
@@ -97,6 +97,7 @@ And each term the factor ```t``` increases its power by ```1```, starting at ```
 Finally, the coefficients of the terms can be found using Pascal's triangle:
 
 > <img src="calculations-resources/pascals-triangle.png" height="100" alt="">  
+> 
 > *source: [Wikipedia](https://en.wikipedia.org/wiki/Pascal's_triangle)*
 
 
