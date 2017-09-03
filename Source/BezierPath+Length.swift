@@ -123,7 +123,7 @@ extension CGPath {
 			case let .addLine(to: p1):
 
 				guard let p0 = currentPoint else {
-					assert(false, "Expected current point")
+					assertionFailure("Expected current point")
 					break
 				}
 
@@ -148,7 +148,7 @@ extension CGPath {
 			case let .addQuadCurve(c1, to: p1):
 
 				guard let p0 = currentPoint else {
-					assert(false, "Expected current point")
+					assertionFailure("Expected current point")
 					break
 				}
 
@@ -172,7 +172,7 @@ extension CGPath {
 			case let .addCurve(c1, c2, to: p1):
 
 				guard let p0 = currentPoint else {
-					assert(false, "Expected current point")
+					assertionFailure("Expected current point")
 					break
 				}
 
@@ -254,7 +254,7 @@ extension CGPath {
 			case let .addLine(to: p1):
 
 				guard let p0 = currentPoint else {
-					assert(false, "Expected current point")
+					assertionFailure("Expected current point")
 					break
 				}
 
@@ -267,7 +267,7 @@ extension CGPath {
 			case let .addQuadCurve(c1, to: p1):
 
 				guard let p0 = currentPoint else {
-					assert(false, "Expected current point")
+					assertionFailure("Expected current point")
 					break
 				}
 
@@ -280,7 +280,7 @@ extension CGPath {
 			case let .addCurve(c1, c2, to: p1):
 
 				guard let p0 = currentPoint else {
-					assert(false, "Expected current point")
+					assertionFailure("Expected current point")
 					break
 				}
 
