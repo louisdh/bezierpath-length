@@ -7,6 +7,7 @@
 [![PodVersion](https://img.shields.io/cocoapods/v/BezierPathLength.svg)](https://cocoapods.org/pods/BezierPathLength)
 ![platform](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-lightgrey.svg)
 [![Twitter](https://img.shields.io/badge/Twitter-@LouisDhauwe-blue.svg?style=flat)](http://twitter.com/LouisDhauwe)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/louisdhauwe)
 
 This project provides a simple API to get the length of either a ```UIBezierPath``` or ```NSBezierPath```. Example:
 
